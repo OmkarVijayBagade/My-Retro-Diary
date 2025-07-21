@@ -47,10 +47,10 @@ retro-diary/
 
 🛠 Built With
 
-HTML5
-CSS3 (Retro design + animations)
-Vanilla JavaScript
-jsPDF for PDF export
+- HTML5
+- CSS3 (Retro design + animations)
+- Vanilla JavaScript
+- jsPDF for PDF export
 
 --- 
 
