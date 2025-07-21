@@ -40,7 +40,7 @@ retro-diary/
 
 🌐 Live Demo
 
-View on GitHub Pages
+[View on GitHub Pages](https://omkarvijaybagade.github.io/My-Retro-Diary/)
 (Enable Pages in your repo settings)
 
 ---
