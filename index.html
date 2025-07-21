@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Retro Diary</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+
+</head>
+<body>
+<h1>My Retro Diary</h1>
+
+<textarea id="diaryText" placeholder="Write your thoughts..."></textarea><br>
+<button onclick="saveEntry()">Save</button>
+<button onclick="exportEntries()">Export</button>
+<input type="file" id="importFile" style="display:none;" onchange="importEntries(event)">
+<button onclick="document.getElementById('importFile').click()">Import</button>
+<button onclick="downloadPDF()">Download as PDF</button>
+
+
+<div class="entries" id="entries"></div>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+    <div id="modalBox" class="modal-box">
+        <span class="close-btn" onclick="closeModal()">✖</span>
+        <div id="modalContent"></div>
+    </div>
+</div>
+
+<div id="leaveModal" class="modal">
+  <div class="modal-box">
+    <h3>Are you sure you want to leave?</h3>
+    <p>You might lose unsaved data. Export your diary first!</p>
+    <button onclick="exportEntries()">Export</button>
+    <button onclick="closeLeaveModal()">Cancel</button>
+    <button onclick="forceLeave()">Leave</button>
+  </div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</body>
+</html>
